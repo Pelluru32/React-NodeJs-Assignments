@@ -1,0 +1,14 @@
+extends template 
+
+
+block vars 
+    - var title="Profile page"
+
+
+block body 
+    h3 main profile page you are in
+    ul 
+        li FirstName: #{userdetails.firstname}
+        li lastName: #{userdetails.lastname}
+        li email: #{userdetails.email}
+    a(href="/logout") logout 
